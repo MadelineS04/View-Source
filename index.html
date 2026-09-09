@@ -52,9 +52,111 @@
     border-radius: 20px;
     transform: translateX(-50%);
   }
+  
+  .statement {
+    font-size: 48px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 80px;
+  }
 
+  .small {
+    color: #777;
+    font-size: 34px;
+  }
 
+  .conversation {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
 
+  .bubble {
+    padding: 24px 28px;
+    border-radius: 28px;
+    font-size: 25px;
+    max-width: 90%;
+  }
+
+  .one {
+    background: #292929;
+    align-self: flex-start;
+  }
+
+  .two {
+    background: #3d5d78;
+    align-self: flex-end;
+  }
+
+  .source {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    color: #777;
+    font-size: 13px;
+    text-decoration: none;
+    transform: translateX(-50%);
+  }
+
+  .home {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    width: 120px;
+    height: 5px;
+    background: #eee;
+    border-radius: 10px;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 500px) {
+    .phone {
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .screen {
+      border-radius: 0;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="phone">
+    <div class="screen">
+
+      <div class="camera"></div>
+
+      <div class="statement">
+        Technology should<br>
+        connect us,<br>
+        <span class="small">not replace real life.</span>
+      </div>
+
+      <div class="conversation">
+        <div class="bubble one">
+          The world is happening beyond the screen.
+        </div>
+
+        <div class="bubble two">
+          Look up.
+        </div>
+      </div>
+
+      <a class="source"
+        href="https://www.scientificamerican.com/article/social-technologies-are-making-us-less-social/" target="_blank">
+        Learn more →
+      </a>
+
+      <div class="home"></div>
+
+    </div>
+  </div>
 
   
   </body>
